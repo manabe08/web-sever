@@ -11,7 +11,8 @@ app.use(express.static(path.join(__dirname,"public")));
 //  console.log(req);
 //  res.send('<h1>トップページ!!</h1>')
 //});
-app.listen(3002,function(){
+const PORT = process.env.PORT || 3002;
+app.listen(PORT,function(){
   console.log("I am running!");
 });
 
